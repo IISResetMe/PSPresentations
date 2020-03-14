@@ -5,7 +5,7 @@
 function Update-XmlFile{
     [CmdletBinding(DefaultParameterSetName = 'ByPath')]
     param(
-        [Parameter(ValueFromPipeline = $true, ParameterSetName = 'ByPath')]
+        [Parameter(Position = 0, ValueFromPipeline = $true, ParameterSetName = 'ByPath')]
         [string[]]$Path,
 
         [Parameter(ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'ByLiteralPath')]
